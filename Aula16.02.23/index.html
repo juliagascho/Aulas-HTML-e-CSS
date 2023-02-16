@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 2 HTML e CSS</title>
+</head>
+<body>
+
+    <h1 title="Título do tema da aula">MÍDIAS</h1>
+        <h2>Imagem</h2>
+            <img src="./midias/eu-a-patroa-e-as-criancas.jpeg" alt="Capa da série: Eu, a patroa e as crianças">
+            <figure>
+                <img width="400px" src="./midias/eu-a-patroa-e-as-criancas.jpeg" alt="Capa da série: Eu, a patroa e as crianças">
+                <figcaption>Capa da série: Eu, a patroa e as crianças</figcaption>
+            </figure>
+
+    <!--tag figure permite colocar legenda com a figcaption e a imagem fica com uma bordinha mais bonita-->
+
+        <h2>Vídeo</h2>
+            <video width="400px" src="./midias/abertura-chaves.mp4" controls="true"></video> <br>
+            <video width="400px" src="./midias/abertura-chaves.mp4" controls autoplay></video>
+
+    <!-- controls é para aparecer os botoes de pausar, iniciar etc, e o autoplay é pra iniciar automaticamente-->
+
+        <h2>Áudio</h2>
+            <audio src="./midias/abertura-um-maluco-no-pedaco.mp3" controls></audio>
+
+    <hr>
+
+    <h2>LISTAS</h2>
+        <h3>Listas não ordenadas</h3>
+            <p>Exemplo: Lista de compras</p>
+            <!--Unordered List - tag ul-->
+            <!--List item - tag li-->
+                <ul>
+                    <li>Leite</li>
+                    <li>Ovos</li>
+                    <li>Farinha de trigo</li>
+                    <li>Açúcar</li>
+                </ul>
+
+                <ul type="square">
+                    <li>Leite</li>
+                    <li>Ovos</li>
+                    <li>Farinha de trigo</li>
+                    <li>Açúcar</li>
+                </ul>
+
+    <br>
+
+        <h3>Listas ordenadas</h3>
+            <p>Exemplo: Receita de bolo</p>
+            <!--Ordered List - tag ol-->
+            <!--List item - tag li-->
+                <ol type="i"> 
+                    <li>Misture todos os ingredientes</li>
+                    <li>Aqueça o forno</li>
+                    <li>Coloque a mistura numa forma</li>
+                    <li>Leve para assar no forno</li>
+                    <li>Retire do forno, espere esfriar e sirva</li>
+                </ol>
+
+    <br>
+
+        <h3>Listas aninhadas</h3>
+            <p>Exemplo: Lista de comidas</p>
+                <ul>
+                    <li>Café da manhã</li>
+                        <ul>
+                            <li>Iogurte</li>
+                            <li>Granola</li>
+                        </ul>
+                    <li>Almoço</li>
+                        <ul>
+                            <li>Arroz</li>
+                            <li>Feijão</li>
+                            <li>Carne</li>
+                            <li>Salada</li>
+                        </ul>
+                    <li>Café da tarde</li>
+                        <ul>
+                            <li>Bolacha</li>
+                            <li>Bebida láctea proteica</li>
+                        </ul>
+                    <li>Jantar</li>
+                        <ul>
+                            <li>Pão</li>
+                            <li>Frango</li>
+                        </ul>
+                </ul>
+
+        <!--Listas aninhadas também podem ser feitas com listas ordenadas-->
+        
+        <br>
+
+        <h3>Listas de descrição</h3>
+            <!--Listas de descrição: dl -> dt é o título e dd é a descrição-->
+            <dl>
+                <dt>HTML</dt>
+                    <dd>
+                        O HTML (Hypertext markup language ou linguagem de marcação de hipertexto) é a linguagem que estrutura os elementos visuais de uma página web.
+                    </dd>
+                <dt>CSS</dt>
+                    <dd>
+                        O CSS (Cascading Style Sheet ou Folhas de estilo em cascata) é uma linguagem de estilização utilizada para melhorar a aparência visual de elementos em um documento HTML.
+                    </dd>
+            </dl>
+        
+        <!--
+            Atributos específicos: src, href, width, target
+            Atributos globais: id, class, title
+        -->
+
+        <br>
+        <hr>
+        <br>
+
+    <h2>TABELAS</h2>
+
+    <!--tag tr (table row) representa uma linha-->
+    <!--tag td (table data) representa células de uma linha-->
+    <!--tag th (table head) utilizada no cabeçalho da tabela-->
+
+        <table border="1">
+            <colgroup>
+                <col style="width: 150px"> <!-- tag col representa uma coluna-->
+                <col style="width: 150px">
+                <col style="width: 80px">
+                <col style="width: 80px">
+            </colgroup>
+
+    <!--a tag colgroup possibilita esstilizar colunas e linhas inteiras, não precisando fazer célula por célula-->
+    
+            <tr>
+                <th>Nome</th>
+                <th>Área</th>
+                <th>Idade</th>
+                <th>Estado</th>
+            </tr>
+            <tr>
+                <td>Julia Gascho</td>
+                <td>Full Stack</td>
+                <td>32 anos</td>
+                <td>Paraná</td>
+            </tr>
+            <tr>
+                <td colspan="4" align="center">Professores da SoulCode</td>
+            </tr>
+        </table>
+
+    <!-- colspan é utilizado para mesclar a célula - EM COLUNA, então coloca no valor o número de colunas que deseja mesclar.-->
+    <!-- rowpan é utilizado para mesclar a célula - EM LINHA, então coloca no valor o número de linhas que deseja mesclar.-->
+    <!--align="center" para centralizar o texto-->
+
+        <h3>Times do Brasil</h3>
+        <table border="3">
+        <thead>
+            <tr>
+                <th>Times</th>
+                <th>Score</th>
+                <th>Gols</th>
+                <th>Vitórias</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fluminense</td>
+                <td>320</td>
+                <td>20</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Flamengo</td>
+                <td>320</td>
+                <td>24</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Corinthians</td>
+                <td>300</td>
+                <td>30</td>
+                <td>6</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" align="center">Times brasileiros</td>
+            </tr> 
+        </tfoot>
+        </table>
+
+    <!--Para melhorar a semantica do código, utilizar as tags thead, tbody e tfoot-->
+</body>
+</html>
