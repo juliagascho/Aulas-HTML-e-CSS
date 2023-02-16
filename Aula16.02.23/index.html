@@ -2,193 +2,158 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Aula 2 HTML e CSS</title>
+    <title>Aula HTML e CSS</title>
 </head>
 <body>
+     <h2>Cadastro de perfil</h2>
+     <br><br>
 
-    <h1 title="Título do tema da aula">MÍDIAS</h1>
-        <h2>Imagem</h2>
-            <img src="./midias/eu-a-patroa-e-as-criancas.jpeg" alt="Capa da série: Eu, a patroa e as crianças">
-            <figure>
-                <img width="400px" src="./midias/eu-a-patroa-e-as-criancas.jpeg" alt="Capa da série: Eu, a patroa e as crianças">
-                <figcaption>Capa da série: Eu, a patroa e as crianças</figcaption>
-            </figure>
+     <!-- 
+        <form> - Container do formulário
+        <input>, <textarea>, <select> - campos do formulário
+        <label> - rótulo de um campo do formulário - possibilita quando o usuario clicar na palavra "nome" ele já poder digitar o seu nome.
+    -->
 
-    <!--tag figure permite colocar legenda com a figcaption e a imagem fica com uma bordinha mais bonita-->
+    <form>
 
-        <h2>Vídeo</h2>
-            <video width="400px" src="./midias/abertura-chaves.mp4" controls="true"></video> <br>
-            <video width="400px" src="./midias/abertura-chaves.mp4" controls autoplay></video>
-
-    <!-- controls é para aparecer os botoes de pausar, iniciar etc, e o autoplay é pra iniciar automaticamente-->
-
-        <h2>Áudio</h2>
-            <audio src="./midias/abertura-um-maluco-no-pedaco.mp3" controls></audio>
-
-    <hr>
-
-    <h2>LISTAS</h2>
-        <h3>Listas não ordenadas</h3>
-            <p>Exemplo: Lista de compras</p>
-            <!--Unordered List - tag ul-->
-            <!--List item - tag li-->
-                <ul>
-                    <li>Leite</li>
-                    <li>Ovos</li>
-                    <li>Farinha de trigo</li>
-                    <li>Açúcar</li>
-                </ul>
-
-                <ul type="square">
-                    <li>Leite</li>
-                    <li>Ovos</li>
-                    <li>Farinha de trigo</li>
-                    <li>Açúcar</li>
-                </ul>
-
-    <br>
-
-        <h3>Listas ordenadas</h3>
-            <p>Exemplo: Receita de bolo</p>
-            <!--Ordered List - tag ol-->
-            <!--List item - tag li-->
-                <ol type="i"> 
-                    <li>Misture todos os ingredientes</li>
-                    <li>Aqueça o forno</li>
-                    <li>Coloque a mistura numa forma</li>
-                    <li>Leve para assar no forno</li>
-                    <li>Retire do forno, espere esfriar e sirva</li>
-                </ol>
-
-    <br>
-
-        <h3>Listas aninhadas</h3>
-            <p>Exemplo: Lista de comidas</p>
-                <ul>
-                    <li>Café da manhã</li>
-                        <ul>
-                            <li>Iogurte</li>
-                            <li>Granola</li>
-                        </ul>
-                    <li>Almoço</li>
-                        <ul>
-                            <li>Arroz</li>
-                            <li>Feijão</li>
-                            <li>Carne</li>
-                            <li>Salada</li>
-                        </ul>
-                    <li>Café da tarde</li>
-                        <ul>
-                            <li>Bolacha</li>
-                            <li>Bebida láctea proteica</li>
-                        </ul>
-                    <li>Jantar</li>
-                        <ul>
-                            <li>Pão</li>
-                            <li>Frango</li>
-                        </ul>
-                </ul>
-
-        <!--Listas aninhadas também podem ser feitas com listas ordenadas-->
-        
-        <br>
-
-        <h3>Listas de descrição</h3>
-            <!--Listas de descrição: dl -> dt é o título e dd é a descrição-->
-            <dl>
-                <dt>HTML</dt>
-                    <dd>
-                        O HTML (Hypertext markup language ou linguagem de marcação de hipertexto) é a linguagem que estrutura os elementos visuais de uma página web.
-                    </dd>
-                <dt>CSS</dt>
-                    <dd>
-                        O CSS (Cascading Style Sheet ou Folhas de estilo em cascata) é uma linguagem de estilização utilizada para melhorar a aparência visual de elementos em um documento HTML.
-                    </dd>
-            </dl>
-        
-        <!--
-            Atributos específicos: src, href, width, target
-            Atributos globais: id, class, title
-        -->
-
-        <br>
-        <hr>
-        <br>
-
-    <h2>TABELAS</h2>
-
-    <!--tag tr (table row) representa uma linha-->
-    <!--tag td (table data) representa células de uma linha-->
-    <!--tag th (table head) utilizada no cabeçalho da tabela-->
-
-        <table border="1">
-            <colgroup>
-                <col style="width: 150px"> <!-- tag col representa uma coluna-->
-                <col style="width: 150px">
-                <col style="width: 80px">
-                <col style="width: 80px">
-            </colgroup>
-
-    <!--a tag colgroup possibilita esstilizar colunas e linhas inteiras, não precisando fazer célula por célula-->
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            
+                <label for="cNome">Nome:</label>    
+                <input required type="text" id="cNome" name="nome" placeholder="Digite seu nome aqui" minilengh="1" maxlengh="50"> <br>
+            <!--
+                essa tag input vai criar um campo para digitar, o padrão é campo de texto, com o type você especifica o tipo de preenchimento
+            
+                O atributo placeholder coloca um texto fraquinho no0 campo que a pessoa vai digitar, quando começa a digitar o texto some.
+            
+                minilengh e maxlengh define o numero minimo e maximo de caracteres
+                
+                required faz com que o campo deve ser obrigatoriamente preenchido. No checkbox tem que ser usado javaScript
+            -->
+            
+                <label for="cSenha">Senha:</label> 
+                <input required type="password" id="cSenha" name="senha"> <br>
+            
+                <label for="cEmail">Email:</label> 
+                <input required type="email" id="cEmail" name="email"> <br>
+            
+                <label for="cTelefone">Telefone:</label> 
+                <input type="tel" id="cTelefone" name="telefone" value="99 99999-9999"> <br>
+            
+                <label for="cInsta">URL do instagram:</label>
+                <input type="url" id="cInsta" name="instagram"> <br>
+            
+                <label for="cIdade">Idade:</label>
+                <input type="number" id="cIdade" name="idade" min="0" max="130"> <br>
+            
+            <!--
+            Data de nascimento:
+            <input type="date" name="dataNascimento" max="2023-02-16" min="2000-01-01">  essas validações são preferencialmente feitas no back-end
+            
+            Hora de nascimento:
+            <input type="time" name="horaNasci"> 
+            -->
+            
+                <label for="cDataHora">Data e hora de nascimento:</label>
+                <input type="datetime-local" id="cDataHora"> <br>
+            
+                <label for="cAvatar">Foto de perfil:</label>
+                <input type="file" id="cAvatar" name="avatar">
+            
+            <!--<input type="file" multiple accept=".png, .jpeg"> -->
+            
+                <label>Sexo:</label>
+                <label for="cSexoMasc">Masculino</label> 
+                <input type="radio" id="cSexoMasc" name="sexo">
+                <label for="cSexoFem">Feminino</label> 
+                <input type="radio" id="cSexoFem" name="sexo">
+            
+            <!--tem que colocar o mesmo nome nos dois campos para que o navegador possibilite o usuario marcar apenas uma das opções-->
     
-            <tr>
-                <th>Nome</th>
-                <th>Área</th>
-                <th>Idade</th>
-                <th>Estado</th>
-            </tr>
-            <tr>
-                <td>Julia Gascho</td>
-                <td>Full Stack</td>
-                <td>32 anos</td>
-                <td>Paraná</td>
-            </tr>
-            <tr>
-                <td colspan="4" align="center">Professores da SoulCode</td>
-            </tr>
-        </table>
+                <br><br>
+    
+            <!--<input type="checkbox"> Aceito os termos da plataforma. -->
 
-    <!-- colspan é utilizado para mesclar a célula - EM COLUNA, então coloca no valor o número de colunas que deseja mesclar.-->
-    <!-- rowpan é utilizado para mesclar a célula - EM LINHA, então coloca no valor o número de linhas que deseja mesclar.-->
-    <!--align="center" para centralizar o texto-->
+        </fieldset>
 
-        <h3>Times do Brasil</h3>
-        <table border="3">
-        <thead>
-            <tr>
-                <th>Times</th>
-                <th>Score</th>
-                <th>Gols</th>
-                <th>Vitórias</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Fluminense</td>
-                <td>320</td>
-                <td>20</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>Flamengo</td>
-                <td>320</td>
-                <td>24</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>Corinthians</td>
-                <td>300</td>
-                <td>30</td>
-                <td>6</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <td colspan="4" align="center">Times brasileiros</td>
-            </tr> 
-        </tfoot>
-        </table>
+        <fieldset>
+            <legend>Outras informações</legend>
 
-    <!--Para melhorar a semantica do código, utilizar as tags thead, tbody e tfoot-->
+                <label for="cInteresse">Interesses:</label>
+                Humanas <input name="interesses" type="checkbox" id="cInteresse"> 
+            <!-- atributo checked mantém uma opção já marcada, nesse caso tendo o label não precisa-->
+                Exatas <input name="interesses" type="checkbox">
+                Linguagens <input name="interesses" type="checkbox">
+        
+                <br><br>
+        
+                <label for="cCor">Escolha sua cor favorita:</label>
+                <input type="color" id="cCor" name="cor"> 
+        
+                <br><br>
+
+                <label for="cIngles">Nível de inglês:</label>           
+                 1 <input type="range" id="cIngles" name="Ingles" list="markers" min="1" max="5"/> 5
+
+                    <datalist id="markers">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                    </datalist>
+
+            <!--1 <input type="range" name="ingles" value="5" min="0" max="10"> 10-->
+
+                <br><br>
+
+                Escondido:
+                <input type="hidden" value="8544765254" name="escondido">
+
+            <!--é uma informação que é para ir para o banco de dados mas não é preenchida pelo usuário e não precisa ser vista pelo mesmo-->
+
+                <br><br>
+
+                <label for="cTexto">Escreva um pouco sobre você:</label> <br>
+                <textarea id="cTexto" cols="30" rows="10" name="texto"></textarea>
+        
+            <!-- Dessa forma a caixa de texto fica com um tamanho padrão mas o usuário consegue mudar o tamanho. Para limitar o tamanho, usar CSS. -->
+
+                <br><br>
+        
+                <label for="cEscolaridade">Escolaridade:</label>
+                <select name="escolaridade" id="cEscolaridade">
+                    <option disable selected>Selecione uma opção</option> <!--selected deixa essa opção selecionada inicialmente-->
+                    <option>Ensino fundamental completo</option>
+                    <option>Ensino médio completo</option>
+                    <option>Ensino superior completo</option>
+                </select>
+
+            <!--
+            o atributo name tem que ter para todas as variaveis que devem ser preenchidas, e com nomes diferentes, para que esses dados sejam reconhecidos depois no banco de dados. Para o backend os dados precisam ter NOMES.
+            Também é possível atribuir um valor padrão que vai aparecer para o usuario antes de ele digitar ou selecionar, com o atributo value.
+            -->
+        
+        </fieldset>
+                   
+
+            <br><br>
+
+        <input type="submit" value="Enviar formulário">
+
+   
+        <button>Enviar formulário</button>
+
+            <!-- Esses dois botões são formas diferentes de fazer o botão, mas funcionam da mesma maneira-->
+
+    
+        <button type="submit">Enviar formulário</button> <!-- mesma coisa que os outros-->
+
+        <button type="button">Não faz nada</button>
+
+        <button type="reset">Reiniciar</button>
+    
+</form>
+
 </body>
 </html>
