@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+	<title>Página de Contato</title>
+</head>
+<body>
+
+	<header>
+		<h1 style = text-align:center;>Minha Empresa</h1>
+		<nav>
+            <ul>
+                <li><a href="#">Principal</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Sobre nós</a></li>
+                <li><a href="#">Catálogo</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+		</nav>
+	</header>
+
+	<main>
+		<section>
+			<h2 style = text-align:center;>Contato</h2>
+
+			<p>Entre em contato conosco através do formulário abaixo ou pelos meios de contato listados na tabela.</p>
+
+			<h3>Formulário para contato:</h3>
+
+            <form>
+
+                <fieldset style="width: 480px; border: 3px solid black;">
+                    <legend>Dados Pessoais</legend>
+                    
+                        <label for="cNome">Nome:</label>    
+                        <input required type="text" id="cNome" name="nome" placeholder="Digite seu nome aqui" minilengh="1" maxlengh="50"> <br>
+
+                        <label for="cEmail">Email:</label> 
+                        <input required type="email" id="cEmail" name="email" placeholder="josesantos@gmail.com"> <br>
+                    
+                        <label for="cTelefone">Telefone:</label> 
+                        <input required type="tel" id="cTelefone" name="telefone" placeholder="99 99999-9999"> <br>
+
+                        <label for="cTexto">Escreva o motivo do seu contato:</label> <br>
+                        <textarea style= required id="cTexto" cols="65" rows="10" name="texto" minilengh="1" maxlengh="20"></textarea>
+
+                        <br>
+
+                        <button>Enviar formulário</button>
+
+                </fieldset>
+
+		</section>
+
+		<section>
+			<h2 style = text-align:center;>Informações de Contato</h2>
+
+            <table border="1">
+                <colgroup>
+                    <col style="width: 80px"> 
+                    <col style="width: 90px">
+                    <col style="width: 80px">
+                    <col style="width: 105px">
+                </colgroup>
+                
+                <tr>
+                    <th>Nome</th>
+                    <th>Área</th>
+                    <th>email</th>
+                    <th>Telefone</th>
+                </tr>
+                <tr>
+                    <td>Maria Silva</td>
+                    <td>Admnistrativo</td>
+                    <td>maria.silva@minhaempresa.com</td>
+                    <td>11 99999-9991</td>
+                </tr>
+                <tr>
+                    <td>José Santos</td>
+                    <td>RH</td>
+                    <td>josé.santos@minhaempresa.com</td>
+                    <td>11 99999-9992</td>
+                </tr>
+                <tr>
+                    <td>João Souza</td>
+                    <td>Direção</td>
+                    <td>joao.souza@minhaempresa.com</td>
+                    <td>11 99999-9993</td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center">Estamos à sua disposição.</td>
+                </tr>
+            </table>
+    
+
+		</section>
+	</main>
+
+	<footer>
+		<p>&copy; 2023 Minha Empresa. Todos os direitos reservados.</p>
+	</footer>
+
+</body>
+</html>
