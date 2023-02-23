@@ -1,0 +1,31 @@
+/*SELETORES*/
+
+p{
+    font-size: 20px;
+}
+
+#p1{
+    color: blue;
+}
+
+#p1 i{
+    color: red;
+}  /* css prioriza a formnatação do filho */
+
+.artigo{
+    width: 300px; /* largura */
+    /*aqui só funciona para o texto*/
+}
+
+/* id - identifica o elemento de forma unica dentro do documento. 
+ class - usada para um elemento que vai fazer parte de um conjunto*/
+
+ .artigo img{
+    width: 100%; /* como a imagem tá dentro do artigo, 100% vai ser igual a 300px*/
+ }
+
+ .artigo small{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+ }

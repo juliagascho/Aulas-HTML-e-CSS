@@ -1,0 +1,38 @@
+/* * - seletor iuniversal */
+
+*{
+    /* alterar fonte padrão do documento */
+    font-family: 'Shantell Sans', cursive;
+}
+
+/* se quiser escolher uma fonte diferente: https://fonts.google.com/specimen/Shantell+Sans porém além de add o codigo css que está na pagina, também tem que adicionar o link no <head> do html*/
+
+h1{
+    /* alterar fonte apenas do titulo h1 */
+    font-size: 25px;
+    font-weight: 500;
+    color: rgb(184, 24, 130);
+    /*sombreamento: x y espessura cor*/
+    text-shadow: 1px 1px 2px palevioletred ;
+}
+
+h2{
+    /* alterar fonte apenas do titulo h1 */
+    font-size: 20px;
+    font-weight: 300; /* altera o peso da fonte: negrito*/
+    font-style: oblique;
+}
+
+/* se quiser colocar o mesmo tamanho nos dois títulos:
+h1, h2{
+    font-size:...
+}
+*/
+
+p{  /*alinhamento do texto:*/
+    text-align: justify;
+    /*transformações no texto:*/
+    text-transform: uppercase;
+    /*altura da linha:*/
+    line-height: 25px;
+}
