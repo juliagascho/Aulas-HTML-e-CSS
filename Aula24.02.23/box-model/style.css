@@ -1,0 +1,38 @@
+/*
+BOX MODEL: MODELO DE CAIXA
+largura
+altura
+borda
+espaçamento interno
+margem
+*/
+
+* {
+    box-sizing: border-box;
+} /*border-box - tamanho da caixa é definido pelo width. Para funcionar certinho é bom usar width 100% e box-sizing norder box*/
+
+header{
+    width: 100%; /*define a largura da caixa*/
+    height: 100px; /*define a altura da caixa*/
+    border: 2px solid black; /*espessura tipo cor*/
+    /*border-width; border-style; border-color*/
+    border-radius: 5px; /*Arredondamento nas bordas*/
+    /*padding-top: 20px;
+    padding-bottom: 20px; 
+    padding-left: 30px;
+    padding-right: 30px; essas opções também podem ser utilizadas para border*/
+    /* padding: 20px 30px 20px 30px; top right botton left */
+    padding: 20px 30px; /*20: em cima e embaixo, 30: direita e esquerda*/
+    box-sizing: border-box; /*para que fique ajustado no tamanho da página*/
+}
+
+#circulo, img{
+    width: 100px; /*define a largura da caixa*/
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50px; /*gera um circulo*/
+} /*também funciona para imagens*/
+
+header a{
+    margin: 20px; /*para links o ideal é usar margem e não padding, para o cursor mudar apenas quando o mouse chega em cima da palavra. Além disso, o espaçamento à esquerda e à direita fica igual ao espaçamento entre as palavras, enquanto o padding soma.*/
+}

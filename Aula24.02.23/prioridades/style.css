@@ -1,0 +1,55 @@
+/*CSS vai priorizar:
+a formatação aplicada por último;
+*/
+
+h1{
+    color: red;
+}
+
+h2{
+    color: blue;
+}
+
+/*CSS vai priorizar:
+a formatação mais específica, por exemplo i ou b dentro do p;
+*/
+
+b{
+    color: purple;
+}
+
+p{
+    color: green;
+}
+
+i{
+    color: yellow;
+}
+
+/*
+Formatando imagens:
+width - largura
+height - altura
+*/
+
+div section article img{
+    width: 200px;
+    height: 200px;   
+} /*o css vai aplicar sempre a formatação mais especificada. A formatação img é mais generalizada.*/
+
+div img{
+    width: 400px;
+    height: 400px;
+}
+
+img{
+    width: 300px;
+    height: 300px;
+}
+
+/* Importância:*/
+
+img{
+    width: 100px !important;
+    height: 100px !important; /* quebra todas as demais prioridades e faz essa formatação */
+}

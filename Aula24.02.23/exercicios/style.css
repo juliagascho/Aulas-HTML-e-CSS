@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+article{
+    border: 2px dotted black;
+    border-radius: 5px;
+    width: 300px;    
+    height: auto;
+}
+
+img{    
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+p{
+    padding: 20px 30px;
+    text-align: justify;
+    margin: 0px;
+}
+
+#cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 10px;
+}
+
