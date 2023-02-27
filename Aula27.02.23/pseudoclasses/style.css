@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif0;
+    text-decoration: none; /*Remove o underline do link*/
+    color: aliceblue;
+
+    /*Transições (aplicar efeito de suavidade na troca de estilo das propriedades)*/
+    transition-property: all;
+    transition-property: 0.2s;
+}
+
+/*pseudo classe*/
+
+a:visited {
+    background-color: crimson;
+}
+
+a:hover {
+    background-color: rgb(23, 173, 173);
+    transform: scale(1.1); /*Aumenta a escala do elemento em 110%*/
+}
+
+a:active { /*quando clica no elemento*/
+    background-color: brown;
+}
+/*para garantir efeitos na active, melhor colocar após hover*/

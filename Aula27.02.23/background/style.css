@@ -1,0 +1,51 @@
+
+/* 
+background: plano de fundo
+dá para colocar duas classes(ou seletores)  no mesmo elemento, exemplo: quadrado e primeiro
+se você for fazer vários quadrados, mas cada um for de uma cor, essa segunda classe pode ser usada para mudar a cor por exemplo. */
+
+.quadrado{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+.primeiro{
+    background-color: blueviolet;
+}
+
+.segundo{
+    /* background: linear-gradient(to right, black, rgb(250, 42, 233), red); */
+    background: linear-gradient(45deg, black, rgb(250, 42, 233), red);
+}
+/* para fazer esses efeitos de gradiente, não dá pra usar background color, tem que ser só background*/
+
+.terceiro{
+    background: radial-gradient(rgb(241, 30, 136), rgb(128, 27, 119), rgb(66, 11, 216));
+}
+
+/* gradientes prontos: https://cssgradient.io/*/
+.quarto{
+    background: rgb(238,174,202); /*eles colocam esse background caso o navegador não aplique o gradiente*/
+    background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+
+/* vw: largura da tela de visualização
+vh: altura da tela*/
+.screen{
+    width: 100vw;
+    min-height: 100vh;
+    border: 2px solid black;
+    background-image: url(./plano-de-fundo.png);
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; ou usa cover, que mantem a div toda preenchida com o plano de fundo, mas como ele ajusta a imagem, pode cortar um pouquinho das bordas da imagem*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #00000088;
+}
