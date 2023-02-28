@@ -1,0 +1,25 @@
+/*
+    Display -> visualização
+    - block - ocupa toda a largura disponivel do container
+    - inline - ocupa espaço em linha (um ao lado do outro)
+    - inline-block - se comporta como bloco mas os elementos são dispostos uns ao lado dos outros
+*/
+
+
+
+.border {
+    padding: 20px;
+    border: 2px solid black;
+}
+
+.bloco {
+    display: block; /*não vai mudar nada, visualização um embaixo do outro - o padrão das divs já é estar em bloco. ocupam a largura total do container em que estão*/
+}
+
+.inline {
+    display: inline-block; /*se usar apenas o inline, a margem do titulo vai ficar dentro das caixinhas. O inline-block faz com que as caixinhas respeitem as margens do que está ao redor*/
+}
+
+.none {
+    display: none;
+}

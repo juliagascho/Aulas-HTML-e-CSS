@@ -1,0 +1,102 @@
+/*
+Flex-box - caixa flexivel
+container
+itens/content
+direção
+
+RESPONSIVIDADE: capacidade do site de se adequar a diferentes dispositivos
+
+*/
+
+.border {
+    padding: 0;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.container {
+    width: 500px;
+    height: 300px;
+    
+    display: flex; /*propriedade que coloca no container*/
+    
+    /*Direção dos itens do container:*/
+    flex-direction: row; /* DEFINIR DIREÇÃO: coloca os itens alinhados lado a lado, se colocar COLUMN vai ficar alinhado em uma coluna um abaixo do outro - row-reverse, column-reverse*/
+    
+    /*Alinhamento de conteúdo seguindo a direção definida*/
+    justify-content: space-evenly; /* flex-start começa no inicio da direção, outra opção: flex-end, center, space-between (coloca um espaço igual entre os itens), space-around(coloca um espaço igual entre os itens e um espaçamento menor nas laterais), space-evenly (coloca o mesmo espaço entre os itens e nas laterais) */
+
+    /*alinhamento dos itens seguindo a direção perpendicular a direçao definida*/    
+    align-items: center; /*arruma os itens que desformata quando coloca o display flex -> flex-start, flex-end, center, stretch*/
+}
+
+.container-2 {
+    width: 50%;
+    height: 300px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  /*nowrap, wrap - quebra de linha, para os itens não saírem do container*/
+    
+    justify-content: center; /*alinha os itens conforma a direção escolhida (row ou column)*/
+    
+    align-items: center; /*alinha os itens no centro da linha (porque a direção é row) e não dentro da caixa*/
+
+    /*somente com flex-wrap:*/
+    /*alinhamento do conteudo (linha/coluna) seguindo a direção definida*/
+    align-content: center; /*flex-start, flex-end, space-between, space-around, space-evenly -- joga as linhas/colunas para cima, para baixo, para o centro. Direção das linhas.*/
+
+    gap: 20px;  /*espaçamento entre os itens - gap: 20px = row-gap: 20px; column-gap: 20px;*/
+
+}
+
+
+.container-3 {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.container-3 img {
+    flex-grow: 1;  
+    flex-shrink: 1;
+    /*crescimento flexível - aumenta o tamanho da imagem até ocupar a div toda | diminuir de forma flexivel = flex-shrink: 1;*/
+}
+
+header {
+    box-sizing: border-box;
+    padding: 0 20px;
+    width: 100%;
+    border: 2px solid blue;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    border: 2px solid purple;
+    flex-grow: 1;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-4 {
+    width: 50%;
+    display: flex;
+}
+
+.container-4 img {
+    flex: 1;
+}
+
+#c {
+    flex: 2;
+}
+
+#t {
+    /* Indica a posição a partir da posição original */
+    order: -1;
+}
