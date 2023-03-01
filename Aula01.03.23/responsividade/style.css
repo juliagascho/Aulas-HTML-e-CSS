@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main {
+    width: 80%;
+    margin: 0px auto; /*centraliza o container*/
+}
+
+.main .artigo {
+    background-color: blueviolet;
+    width: 300px;
+    height: 350px;
+    padding: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+
+
+/*
+RESPONSIVIDADE É A CAPACIDADE DE UM SITE/APLICAÇÃO WEB DE SE ADAPTAR A DIFERENTES DISPOSITIVOS
+Usa o @media para fazer essas configurações.
+São break points - pontos de quebra
+*/
+
+
+/* se o dispositivo tiver uma largura menor ou igual a 720px E orientação paisagem, vai aplicar a estilização: */
+@media (max-width: 720px) and (orientation: landscape) {  
+    .main .artigo {
+        background-color: rgb(127, 157, 255);
+        width: 250px;
+        height: 275px;
+    }
+}
+
+/*
+orientation: landscape ou portrait
+para duas situações, pode usar 'and' ou 'vírgula', que representa OU
+*/
+
+/* se o dispositivo tiver uma largura menor ou igual a 600px OU estiver com altura maior que largura (portrait), vai aplicar a estilização: */
+@media (max-width: 600px), (orientation: portrait) { 
+    .main .artigo {
+        background-color: rgb(219, 134, 22);
+        width: 150px;
+        height: 175px;
+    }
+}
+
+/* Mobile first (móvel primeiro) */
+/* se o dispositivo tiver uma largura maior ou igual a X px*/
+
+@media (min-width: 800px){
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 1000px){
+    h1 {
+        font-size: 70px;
+    }
+}

@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: aquamarine;
+}
+
+.card {
+    width: 250px;
+    display: inline-block !important; /*sem o important não funcionou, provavelmente porque ele priorizou alguma estilização do bootstrap*/
+}
+
+#carouselExample {
+    width: clamp(320px, 100%, 910px);  /* recebe: o mínimo, o relativo, o máximo - Função bastante usada em containers*/
+    margin: 10px auto;
+}
