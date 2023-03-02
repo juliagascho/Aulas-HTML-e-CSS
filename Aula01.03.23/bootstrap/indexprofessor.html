@@ -1,42 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula bootstrap</title>
+    <title>Aula de HTML e CSS</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
-    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">-->
-    <!-- DÁ PRA USAR TANTO O LINK QUANTO BAIXAR E UTILIZAR O ARQUIVO-->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
 </head>
 
 <body>
-
-    <!-- Bootstrap - Framework de HTML, CSS E JS -> agilidade + produtividade -->
+    <!-- Bootstrap (Framework - HTML + CSS + JS) -> Agilidade + Produtividade -->
+    <!-- Por meio do atributo "class" o bootstrap aplica estilização aos elementos -->
 
     <header>
-
-        <!-- DROPDOWN - INICIO -->
         <h1>Hello, Bootstrap!</h1>
+        <!-- DROPDOWN - INICIO -->
         <div class="dropdown">
             <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Dropdown button
+                Menu
             </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Home</a></li>
+                <li><a class="dropdown-item" href="#">Imprensa</a></li>
+                <li><a class="dropdown-item" href="#">Sobre</a></li>
+                <li><a class="dropdown-item" href="#">Contato</a></li>
             </ul>
         </div>
-        <!-- DROPDOWN - INICIO -->
-
+        <!-- DROPDOWN - FIM -->
     </header>
-
-    <!-- por meio do atributo "class" o bootstrap aplica estilização aos elementos-->
-    <button class="btn btn-primary">ENVIAR</button>
 
     <div class="container"> <!-- Container -> Espaço Lateral -->
         <!-- BUTTON - INICIO -->
@@ -47,78 +42,87 @@
         <button type="button" class="btn-close" aria-label="Close"></button>
         <!-- BUTTON - FIM -->
 
-
         <!-- ALERT - INICIO -->
-        <div class="container"> <!-- CLASSE CONTAINER NO BOOTSTRAP CENTRALIZA A CAIXA NA TELA, FAZ MARGENS LATERAIS-->
-            <div class="alert alert-primary" role="alert">
-                A simple primary alert—check it out!
-            </div>
-            <div class="alert alert-secondary" role="alert">
-                A simple secondary alert—check it out!
-            </div>
-            <div class="alert alert-success" role="alert">
-                A simple success alert—check it out!
-            </div>
-            <div class="alert alert-danger" role="alert">
-                A simple danger alert—check it out!
-            </div>
+        <div class="alert alert-primary" role="alert">
+            Cuidado com ...!
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            Cuidado com ...!
+        </div>
+        <div class="alert alert-success" role="alert">
+            Cuidado com ...!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            Cuidado com ...!
         </div>
         <!-- ALERT - FIM -->
 
-        <!-- CARD - INICIO -->
+        <!-- CARDS - INICIO -->
         <div class="card">
-            <img src="./imagens/ARTIGOS/artigo-1.png" class="card-img-top" alt="ARTIGO1">
+            <img src="./imagens/ARTIGOS/artigo-1.png" class="card-img-top" alt="Artigo 1">
             <div class="card-body">
-                <h5 class="card-title">Artigo 1</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Saiba mais</a>
+                <h5 class="card-title">Artigo Primeiro</h5>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cum quis nihil distinctio numquam,
+                    fugit eum doloremque magnam amet. Enim dicta tenetur optio ratione odio totam? Nemo quisquam earum
+                    fugit.
+                </p>
             </div>
         </div>
-        <!-- CARD - FIM -->
-
-        <!-- CARD - INICIO -->
         <div class="card">
-            <img src="./imagens/ARTIGOS/artigo-2.png" class="card-img-top" alt="ARTIGO2">
+            <img src="./imagens/ARTIGOS/artigo-2.png" class="card-img-top" alt="Artigo 2">
             <div class="card-body">
-                <h5 class="card-title">Artigo 2</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                    card's
-                    content.</p>
-                <a href="#" class="btn btn-primary">Saiba mais</a>
+                <h5 class="card-title">Artigo Primeiro</h5>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cum quis nihil distinctio numquam,
+                    fugit eum doloremque magnam amet. Enim dicta tenetur optio ratione odio totam? Nemo quisquam earum
+                    fugit.
+                </p>
             </div>
         </div>
-        <!-- CARD - FIM -->
+        <div class="card">
+            <img src="./imagens/ARTIGOS/artigo-3.png" class="card-img-top" alt="Artigo 3">
+            <div class="card-body">
+                <h5 class="card-title">Artigo Primeiro</h5>
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cum quis nihil distinctio numquam,
+                    fugit eum doloremque magnam amet. Enim dicta tenetur optio ratione odio totam? Nemo quisquam earum
+                    fugit.
+                </p>
+            </div>
+        </div>
+        <!-- CARDS - FIM -->
 
-        <!-- CAROUSEL - CARROSSEL - INICIO -->
+        <!-- CAROUSEL - INICIO -->
         <div id="carouselExample" class="carousel slide">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./imagens/BANNER/banner-1.png" class="d-block w-100" alt="BANNER1">
+                    <img src="./imagens/BANNER/banner-1.png" class="d-block w-100" alt="Banner 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="./imagens/BANNER/banner-2.png" class="d-block w-100" alt="BANNER2">
+                    <img src="./imagens/BANNER/banner-2.png" class="d-block w-100" alt="Banner 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="./imagens/BANNER/banner-3.png" class="d-block w-100" alt="BANNER3">
+                    <img src="./imagens/BANNER/banner-3.png" class="d-block w-100" alt="Banner 3">
                 </div>
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
+
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <!--  CAROUSEL - CARROSEL  - FIM -->
+        <!-- CAROUSEL - FIM -->
 
-        <!--MODAL INÍCIO-->
+        <!-- MODAL - INICIO -->
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            ABRIR CAIXA DE DIÁLOGO
+            Abrir caixa de dialogo
         </button>
 
         <!-- Modal -->
@@ -130,9 +134,9 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium aperiam voluptatem ullam
-                        ratione blanditiis soluta nobis, ab, assumenda magni eos amet neque totam doloremque rerum aut
-                        animi? Laborum, corporis quo.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit unde perferendis, suscipit porro
+                        fugiat rem quo est magnam, adipisci inventore sit ab laudantium libero in nisi assumenda nihil
+                        voluptatum? Totam?
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
@@ -141,9 +145,9 @@
                 </div>
             </div>
         </div>
-        <!-- MODAL FIM-->
+        <!-- MODAL - FIM -->
 
-        <h2>Formulário</h2>
+        <h1>Formulário</h1>
         <!-- FORM-CONTROL - INICIO -->
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Email address</label>
@@ -255,12 +259,30 @@
 
     </div>
 
+    <script>
+        (() => {
+            'use strict'
 
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 
     <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
     <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
-    <!-- para funcionar o botão de menu do bootstrap, precisa chamar este script, isso fala na própria documentação do DROPDOWN no bootstrap-->
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
 </body>
 
 </html>
